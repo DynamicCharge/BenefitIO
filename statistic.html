@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" sizes="64x64" href="assets/img/touch-icon-iphone..png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/touch-icon-iphone..png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/touch-icon-iphone..png">
+    <title>Benefit - Статистика рефералов</title>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__burger js-header-burger"><span></span></div>
+                <div class="header__profile"><span class="text-small">Account-name</span>
+                    <div class="header__profile-icon"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main index-page">
+            <div class="main__wrapper">
+                <section class="sidebar js-sidebar">
+                    <div class="sidebar__wrapper">
+                        <div class="sidebar__chapter">
+                            <p class="text-small text-gray text-uppercase sidebar__title">Главное</p>
+                            <div class="sidebar__list">
+                                <div class="sidebar__list-item is-active"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#category"></use>
+                                    </svg><span class="text-regular">Стартовая</span></div>
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#chart"></use>
+                                    </svg><span class="text-regular">Статистика рефералов</span></div>
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#wallet"></use>
+                                    </svg><span class="text-regular">Выплаты</span></div>
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#setting"></use>
+                                    </svg><span class="text-regular">Данные и реквизиты</span></div>
+                            </div>
+                        </div>
+                        <div class="sidebar__chapter">
+                            <p class="text-small text-gray text-uppercase sidebar__title">Обучающие материалы</p>
+                            <div class="sidebar__list">
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#document"></use>
+                                    </svg><span class="text-regular">Обучающий материал</span></div>
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#document"></use>
+                                    </svg><span class="text-regular">Маркетинговый материал</span></div>
+                            </div>
+                        </div>
+                        <div class="sidebar__chapter">
+                            <p class="text-small text-gray text-uppercase sidebar__title">Поддержка</p>
+                            <div class="sidebar__list">
+                                <div class="sidebar__list-item"><svg class="sidebar__list-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#more-square"></use>
+                                    </svg><span class="text-regular">Техническая поддержка</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="statistic">
+                    <div class="section__wrapper">
+                        <h2 class="text-500 statistic__title">Статистика рефералов</h2>
+                        <p class="text-regular statistic__subtitle">Вы можете менять свои личные данные, подтверждать
+                            почту, управлять аккаунтом и настройками безопасности</p>
+                        <div class="statistic__content">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="statistic__content-date">
+                                    <div class="statistic__content-date-elem"><span>Выберите период </span></div>
+                                    <div class="statistic__content-date-elem"><span class="text-gray m-r-sm">с</span><input class="input input__date" type="number" name="period-start" value="24.01"><span class="text-gray m-x-sm">по </span><input class="input input__date" type="number" name="period-end" value="24.01"></div>
+                                </div>
+                                <div class="statistic__content-search"><svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#sort"></use>
+                                    </svg><input class="input input__search" type="search" placeholder="Поиск"></div>
+                            </div>
+                            <div class="home__table statistic__table">
+                                <div class="home__table-wrapper">
+                                    <div class="home__table-rail">
+                                        <div class="home__table-row">
+                                            <p class="text-600 home__table-name">Рефферал</p>
+                                            <p class="text-600 home__table-name">Товар</p>
+                                            <p class="text-600 home__table-name">Продано</p>
+                                            <p class="text-600 home__table-name">Сумма</p>
+                                            <p class="text-600 home__table-name">Дата</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                        <div class="home__table-row">
+                                            <p class="home__table-element">Петрова Софья Матвеевна</p>
+                                            <p class="home__table-element">Сухая добавка из эмбрино...</p>
+                                            <p class="home__table-element">12</p>
+                                            <p class="home__table-element">21 240 ₽</p>
+                                            <p class="home__table-element">14.01.2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statistic__pagination">
+                                <div class="d-flex">
+                                    <div class="statistic__pagination-item is-current"><span class="text-small">1</span>
+                                    </div>
+                                    <div class="statistic__pagination-item"><span class="text-small">2</span></div>
+                                    <div class="statistic__pagination-item"><span class="text-small">3</span></div>
+                                    <div class="statistic__pagination-item"><span class="text-small">4</span></div>
+                                    <div class="statistic__pagination-item"><span class="text-small">5</span></div>
+                                </div>
+                                <div class="statistic__pagination-all"><span class="text-small">1-5</span><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="assets/img/sprite..svg#arrow-down"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
